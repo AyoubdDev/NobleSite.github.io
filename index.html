@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>noblesite</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/0d8b5bb897.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+
+  <div class="reseau">
+    <ul>
+      
+      <li><a href="https://api.whatsapp.com/send?phone=+212661224998"><img src="images/whatsapp.png" class="img-fluid rounded-top" alt="" ></a></li>
+      <li><a href="https://www.facebook.com/%D9%83%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D9%85%D8%B7%D8%A7%D8%B1-%D9%85%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A-109367635206349"><img src="images/facebook.png" class="img-fluid rounded-top" alt="" ></a></li>
+      <li><a href="mailto:NobelSite@gmail.com"><img src="images/Email-PNG-Photo.png" class="img-fluid rounded-top" alt="" ></a></li>
+    </ul>
+  </div>
+    
+   <header class="image fw-bolder">
+    <nav class="navbar navbar-expand navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Noble<span>Site</span></a>
+	        <ul class="navbar-nav ml-auto text-light ">
+	          <li class="nav-item  active "><a href="index.html" class="nav-link " style="color:#ff8000">Accueil</a></li>
+	     
+	          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="#voitures" class="nav-link">Voitures</a></li>
+	          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+	        </ul>
+	    </div>
+      </nav>
+      <!-- Hover added -->
+    
+      <div class="container formulaire">
+      <div class="MENU ">
+        <p class=" fw-bold text-center text-light fs-1">
+          Vous cherchez une voiture ? 
+        </p>
+       <p class="pag fw-bold text-center  fs-1" >Vous êtes au bon endroit.</p>
+       <div class="col-md-6 col-sm-12 form-style-8">
+        <h2 class="text-center">RÉSERVEZ UNE VOITURE</h2>
+        <form onsubmit="envoyerMessage();reset();return false;">
+          <input type="search" name="field1" class="text-center fw-bold" value="Aéroport Med V (Terminal 2), Casablanca" id="lieu" required />
+          
+         
+          <input type="datetime-local" id="meeting-timeD"
+          name="meeting-time" value="2023-03-03T19:30"
+          min="2023-03-03T00:00" max="2025-06-14T00:00" required>
+      
+         
+          <input type="datetime-local" id="meeting-timeR"
+                 name="meeting-time" value="2023-06-12T19:30"
+                 min="2023-03-03T00:00" max="2025-06-14T00:00" required>
+                <input type="tel" name="" id="tel" placeholder="+21267070879">
+          
+          <input type="submit" value="confirme" />
+          
+          
+        </form>
+      </div>
+        
+      </div>
+      </div>
+
+   </header>
+   
+   <section class="services" id="services">
+  
+    <div class="service">
+      <i class="fas fa-car"></i>
+      <h3>Large choix de voitures</h3>
+      <p>Nous avons une grande sélection de voitures pour répondre à tous les besoins et budgets.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Assurance tous risques</h3>
+      <p>Toutes nos voitures sont couvertes par une assurance tous risques pour votre tranquillité d'esprit.</p>
+    </div>
+    <div class="service">
+      <i class="fas fa-road"></i>
+      <h3>Kilométrage illimité</h3>
+      <p>Nous ne limitons pas le nombre de kilomètres que vous pouvez parcourir avec nos voitures.</p>
+    </div>
+  </section>
+  
+   <!-- <div class=" d-flex align-items-center " id="services">
+   
+    <div class="services-wrap rounded-right w-100">
+      <span class="text-center text-info fw-bolder fs-3 border-bottom-2 border-info py-2">Services</span><hr>
+      <h3 class="heading-section mb-4">Une meilleure façon de louer vos voitures parfaites</h3>
+      <div class="row d-flex mb-4">
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="services w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center bg-info"><i class="fa fa-route text-warning fs-4 fw-bold" aria-hidden="true"></i></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Choisissez votre lieu de prise en charge</h3>
+            </div>
+          </div>      
+        </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="services w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center bg-info"><i class="fa fa-handshake-o text-warning fs-4 fw-bold" aria-hidden="true"></i></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Sélectionnez la meilleure offre</h3>
+            </div>
+          </div>      
+        </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="services w-100 text-center">
+            <div class="icon d-flex align-items-center justify-content-center bg-info"><i class="fa fa-car text-warning fs-4 fw-bold" aria-hidden="true"></i></span></div>
+            <div class="text w-100">
+              <h3 class="heading mb-2">Réservez votre voiture de location</h3>
+            </div>
+          </div>      
+        </div>
+      </div>
+      <p><a href="#" class="btn btn-info text-light py-3 px-4">Réservez votre voiture parfaite</a></p>
+    </div>
+  </div> -->
+
+   <div class="container row mx-auto z-0" id="voitures">
+    <span class=" text-info fw-bolder fs-3 border-bottom-2 border-info py-2">Voitures</span><hr>
+    <div class="col-md-4 col-12 my-2 rounded ">
+      <div class="card shadow" style="width: 18rem;">
+        <img class="card-img-top" src="images/car-1.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" >ALFA ROMEO GIULIETTA</h5>
+          <h6 class=" text-center" style="color: #ff8000;">300.00 MAD /Jour</h6>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-group ">
+                  <li class="list-group-item"><strong>Année de la voiture: </strong>2019 </li>
+                  <li class="list-group-item"><strong>Carburant: </strong>Diesel</li>
+                  <li class="list-group-item"><strong>boîte de vitesse:</strong>Auto</li>
+                  <li class="list-group-item"><strong>Nombre de passagers: </strong>5</li>
+                  <li class="list-group-item"><strong>Des portes: </strong>5</li>
+                  
+                </ul>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+       
+        <div class="card-body">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">détails</button>
+          <a type="button" class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+212661224998&text=bonjour je voudrais louer une voiture ALFA ROMEO GIULIETTA">Réserver</a>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-12 my-2" >
+      <div class="card shadow" style="width: 18rem;">
+        <img class="card-img-top" src="images/car-2.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" >Clio 4</h5>
+          <h6 class=" text-center" style="color: #ff8000;">200.00 MAD /Jour</h6>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-group ">
+                  <li class="list-group-item"><strong>Année de la voiture: </strong>2022 </li>
+                  <li class="list-group-item"><strong>Carburant: </strong>Diesel</li>
+                  <li class="list-group-item"><strong>boîte de vitesse:</strong>Auto</li>
+                  <li class="list-group-item"><strong>Nombre de passagers: </strong>5</li>
+                  <li class="list-group-item"><strong>Des portes: </strong>5</li>
+                  
+                </ul>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+       
+        <div class="card-body">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter1">détails</button>
+          <a type="button" class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+212661224998&text=bonjour je voudrais louer une voiture Clio 4">Réserver</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-12 my-2">
+      <div class="card shadow" style="width: 18rem;">
+        <img class="card-img-top" src="images/car-3.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" >Jeep renegade</h5>
+          <h6 class=" text-center" style="color: #ff8000;">300.00 MAD /Jour</h6>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-group ">
+                  <li class="list-group-item"><strong>Année de la voiture: </strong>2022</li>
+                  <li class="list-group-item"><strong>Carburant: </strong>Diesel</li>
+                  <li class="list-group-item"><strong>boîte de vitesse:</strong>Auto</li>
+                  <li class="list-group-item"><strong>Nombre de passagers: </strong>5</li>
+                  <li class="list-group-item"><strong>Des portes: </strong>5</li>
+                  
+                </ul>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+       
+        <div class="card-body">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">détails</button>
+          <a type="button" class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+212661224998&text=bonjour je voudrais louer une voiture Jeep renegade">Réserver</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-12 my-2">  <div class="card shadow" style="width: 18rem;">
+        <img class="card-img-top" src="images/car-5.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" >Fiat tipo</h5>
+          <h6 class=" text-center" style="color: #ff8000;">300.00 MAD /Jour</h6>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-group ">
+                  <li class="list-group-item"><strong>Année de la voiture: </strong>2022</li>
+                  <li class="list-group-item"><strong>Carburant: </strong>Diesel</li>
+                  <li class="list-group-item"><strong>boîte de vitesse:</strong>manual</li>
+                  <li class="list-group-item"><strong>Nombre de passagers: </strong>5</li>
+                  <li class="list-group-item"><strong>Des portes: </strong>5</li>
+                  
+                </ul>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+       
+        <div class="card-body">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter2">détails</button>
+          <a type="button" class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+212661224998&text=bonjour je voudrais louer une voiture Fiat tipo">Réserver</a>
+        </div>
+      </div></div>
+    <div class="col-md-4 col-12 my-2">  <div class="card shadow" style="width: 18rem;">
+        <img class="card-img-top" src="images/car-6.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" >Kiat seltos</h5>
+          <h6 class=" text-center" style="color: #ff8000;">350.00 MAD /Jour</h6>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-group ">
+                  <li class="list-group-item"><strong>Année de la voiture: </strong>2022</li>
+                  <li class="list-group-item"><strong>Carburant: </strong>Diesel</li>
+                  <li class="list-group-item"><strong>boîte de vitesse:</strong>Auto</li>
+                  <li class="list-group-item"><strong>Nombre de passagers: </strong>5</li>
+                  <li class="list-group-item"><strong>Des portes: </strong>5</li>
+                  
+                </ul>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+       
+        <div class="card-body">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter3">détails</button>
+          <a type="button" class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+212661224998&text=bonjour je voudrais louer une voiture Kiat seltos">Réserver</a>
+        </div>
+      </div></div>
+    <div class="col-md-4 col-12 my-2">  <div class="card shadow" style="width: 18rem;">
+        <img class="card-img-top" src="images/car-7.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" >Logan dacia</h5>
+          <h6 class=" text-center" style="color: #ff8000;">300.00 MAD /Jour</h6>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-group ">
+                  <li class="list-group-item"><strong>Année de la voiture: </strong>2022</li>
+                  <li class="list-group-item"><strong>Carburant: </strong>Diesel</li>
+                  <li class="list-group-item"><strong>boîte de vitesse:</strong>Manuelle</li>
+                  <li class="list-group-item"><strong>Nombre de passagers: </strong>5</li>
+                  <li class="list-group-item"><strong>Des portes: </strong>5</li>
+                  
+                </ul>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+       
+        <div class="card-body">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter4">détails</button>
+          <a type="button" class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+212661224998&text=bonjour je voudrais louer une voiture Logan dacia">Réserver</a>
+        </div>
+      </div></div>
+    <div class="col-md-4 col-12 my-2">  <div class="card shadow" style="width: 18rem;">
+        <img class="card-img-top" src="images/car-8.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" >Peugeot 208</h5>
+          <h6 class=" text-center" style="color: #ff8000;">300.00 MAD /Jour</h6>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-group ">
+                  <li class="list-group-item"><strong>Année de la voiture: </strong>2018</li>
+                  <li class="list-group-item"><strong>Carburant: </strong>Diesel</li>
+                  <li class="list-group-item"><strong>boîte de vitesse:</strong>manual</li>
+                  <li class="list-group-item"><strong>Nombre de passagers: </strong>5</li>
+                  <li class="list-group-item"><strong>Des portes: </strong>5</li>
+                  
+                </ul>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+       
+        <div class="card-body">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter5">détails</button>
+          <a type="button" class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+212661224998&text=bonjour je voudrais louer une voiture Peugeot 208">Réserver</a>
+        </div>
+      </div></div>
+    <div class="col-md-4 col-12 my-2">  <div class="card  shadow" style="width: 18rem; height:450px">
+        <img class="card-img-top " src="images/car-10.png" alt="Card image cap" style="height:287px">
+        <div class="card-body  ">
+          <h5 class="card-title" >DACIA DUSTER</h5>
+          <h6 class=" text-center" style="color: #ff8000;">350.00 MAD /Jour</h6>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-group ">
+                  <li class="list-group-item"><strong>Année de la voiture: </strong>2022</li>
+                  <li class="list-group-item"><strong>Carburant: </strong>Diesel</li>
+                  <li class="list-group-item"><strong>boîte de vitesse:</strong>DACIA DUSTER</li>
+                  <li class="list-group-item"><strong>Nombre de passagers: </strong>5</li>
+                  <li class="list-group-item"><strong>Des portes: </strong>5</li>
+                  
+                </ul>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter6">détails</button>
+          <a type="button" class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+212661224998&text=bonjour je voudrais louer une voiture DACIA DUSTER">Réserver</a>
+        </div>
+      </div></div>
+    <div class="col-md-4 col-12 my-2">  <div class="card shadow" style="width: 18rem;">
+        <img class="card-img-top" src="images/car-11.jpg" alt="Card image cap" style="height:287px">
+        <div class="card-body">
+          <h5 class="card-title" >DACIA Sandero</h5>
+          <h6 class=" text-center" style="color: #ff8000;">300.00 MAD /Jour</h6>
+        </div>
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Description</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-group ">
+                  <li class="list-group-item"><strong>Année de la voiture: </strong>2022</li>
+                  <li class="list-group-item"><strong>Carburant: </strong>Diesel</li>
+                  <li class="list-group-item"><strong>boîte de vitesse:</strong>Auto</li>
+                  <li class="list-group-item"><strong>Nombre de passagers: </strong>5</li>
+                  <li class="list-group-item"><strong>Des portes: </strong>5</li>
+                  
+                </ul>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+       
+        <div class="card-body">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter7">détails</button>
+          <a type="button" class="btn btn-warning" href="https://api.whatsapp.com/send?phone=+212661224998&text=bonjour je voudrais louer une voiture DACIA Sandero">Réserver</a>
+        </div>
+      </div></div>
+   </div>
+
+
+
+
+
+   
+
+  <div class="container" id="contact">
+    <span class="text-center text-info fw-bolder fs-3 border-bottom-2 border-info py-2">Contact</span><hr>
+    <div class="row">
+      <div class="col-md-4 col-12 pb-2">
+        <!-- Some borders are removed -->
+        <ul class="list-group contact" >
+          <li ><a href="https://www.google.com/maps/place/Plateforme+logistique+CHRONOPOST/@33.4128326,-7.5337918,16z/data=!4m5!1m2!2m1!1smakhlouf+deroua!3m1!1s0x0:0x8573cf349abc0542" class="WpHeLc VfPpkd-mRLv6 nav-link text-light"><i class="fa fa-map text-light " aria-hidden="true"></i> DEROUA</a></li>
+          <li ><a class="WpHeLc VfPpkd-mRLv6 nav-link text-light" href="tel:+212-661-102666" aria-label="Appeler maintenant" jsname="hSRGPd"><i class="fa fa-mobile-phone" aria-hidden="true"></i> +212661224998</a>  </li>
+          <li ><a href="mailto:NobelSite@gmail.com" class="text-light"><i class="fa fa-envelope" aria-hidden="true"></i> NobleSite@gmail.com</a></li>
+      
+          
+          </ul>
+      </div>
+      <div class="col-md-8 col-12">
+        <form onsubmit="envoyerMessage();reset();return false;">
+          <div class="form-row">
+            <div class="form-group col-md-6 pb-4">
+            
+              <input type="text" class="form-control" id="nom" placeholder="Nom">
+            </div>
+            <div class="form-group col-md-6 pb-4">
+             
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+           
+          </div>
+          <div class="form-row col-md-6 pb-4">
+           
+            <input type="text" class="form-control" id="message" placeholder="Message">
+          </div>
+     
+      
+          <button type="submit" class="btn btn-warning">envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="counter orange">
+                <div class="counter-icon"><i class="fa fa-car"></i></div>
+                <h3>VÉHICULES</h3>
+                <span class="counter-value">+100</span>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="counter pink">
+                <div class="counter-icon"><i class="fa fa-user"></i></div>    
+                <h3>CLIENTS BUSINESS</h3>
+                <span class="counter-value">300</span>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="counter blue">
+              <div class="counter-icon"> <i class="fa fa-car" aria-hidden="true"></i> </div>    
+              <h3>LIVRAISONS PAR AN</h3>
+              <span class="counter-value">+700</span>
+          </div>
+      </div>
+    </div>
+</div>
+<footer class="mt-4">
+  <div class="footer-navbar">
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Voitures</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-social-icons">
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script >
+function envoyerMessage(){
+  Email.send({
+    SecureToken : "117456a1-104b-4d9e-b49f-6f187bf4062a",
+    To :'hiayoub26@gmail.com',
+    From :'hiayoub26@gmail.com',
+    Subject : "location de voiture",
+    Body :"lieu de départ:"+document.getElementById("lieu").value+
+    "<br> date de départ: "+document.getElementById("meeting-timeD").value+
+    "<br> date d'arrivée"+ document.getElementById("meeting-timeR").value+
+    "<br> numéro: "+ document.getElementById("tel").value+
+    "<br> nom: "+document.getElementById("nom").value+
+    "<br> email: "+document.getElementById("email").value+
+    "<br> message: "+document.getElementById("message").value
+}).then(
+  message => alert("message envoye avec succée")
+);
+}
+$(document).ready(function(){
+    $('.counter-value').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        },{
+            duration: 3500,
+            easing: 'swing',
+            step: function (now){
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>
